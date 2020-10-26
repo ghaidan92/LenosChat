@@ -69,7 +69,7 @@ a {
 	padding: 0px 20px;
 }
 
-.frame {
+.zoom-frame {
 	border: 0; 
 	width: 40vw; 
 	height:60vh;
@@ -187,7 +187,7 @@ a {
 		display: block;
 	}
 
-	.frame {
+	.zoom-frame {
 		border: 0; 
 		width: 90vw; 
 		height: 40vh;
@@ -195,7 +195,7 @@ a {
 }
 
 @media (max-width: 1030px) {
-	.frame {
+	.zoom-frame {
 		border: 0;
 		height: 60vh;
 	}
