@@ -34,14 +34,14 @@ io.on('connection', socket => {
     // io.to(user.room).emit('roomUsers', {
     //     room: user.room,
     //     users: getRoomUsers(user.room)
-    
+
     // })
 
     // Listen for chatMessage
     socket.on('chatMessage', (msg) => {
         const user = getCurrentUser(socket.id);
 
-        // io.to(user.room).emit('message', formatMessage(user.username, msg));
+        io.to(user.room).emit('message', formatMessage(user.username, msg));
     });
 
       // Runs when client disconnects
